@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "0.10"
+install:
+  - bundle install
+  - npm install
+deploy:
+  strategy: git
+  provider: heroku
+  buildpack: https://github.com/meza/heroku-buildpack-php.git#nonprod
+  api_key:
+    secure: hdbwGfTfyzUcf9hKk/4TlAHU9EneHNDh79XOr4qwR/OJIDonp8jQFVzO/zyVrhYbcq82rN75g0+6aX83XOyJ0ryQhL5LNA6kzxbQylt9FB05vsF86rtHwbSEbscCB2/1gDeF1P8MlrU1I7IwnCv7A1T9lbGaFKevnQLqkbKS7D4=
+  app: designhorf-blog
+  on:
+    repo: designhorf/designhorf-blog
+notifications:
+  slack: tatu:heB5CcyJ80t4IDuIoXsAt7Wc
