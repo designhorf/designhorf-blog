@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../img/pattern2.png");
+  font-family: "Open Sans", "Tahoma", "Verdana", "sans-serif";
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+nav {
+  height: 3.125em;
+  width: 1000px;
+  background-color: #ee3333;
+  text-align: center;
+  font-size: 1em;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+nav li {
+  flex: 2 1 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-pack: center;
+  -webkit-flex-line-pack: center;
+  -webkit-align-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-flex-pack: center;
+  -ms-flex-line-pack: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 3.125em;
+}
+nav li:nth-of-type(4) {
+  flex: .7 1 0;
+}
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*.col-1 { width: 1000px; }
+.col-2 { width: 500px; }
+.col-3 { width: 333.3px; }
+.col-4 { width: 250px; }
+.col-5 { width: 200px; }
+.col-6 { width: 166.6px; }
+.col-7 { width: 142.8px; }
+.col-8 {}
+.col-9 {}
+.col-10 { width: 100px; }
+.col-11 {}
+.col-12 { width: 83.3px; }*/
+#main_nav li#home span:hover, #main_nav li#aboutME span:hover,
+#main_nav li#email span:hover, #main_nav li#fb span:hover {
+  color: white;
+  background-color: #ee3333;
+}
+#main_nav li#logo a {
+  color: #000;
+}
+
+#sub-page li#home span:hover, #sub-page li#aboutME span:hover,
+#sub-page li#email span:hover, #sub-page li#fb span:hover {
+  color: #ee3333;
+  background-color: white;
+}
+#sub-page #designhorf, #sub-page #photography {
+  color: white;
+}
+
+#nav-head {
+  text-align: center;
+}
+
+#aboutME, #photography {
+  text-align: left;
+}
+
+#designhorf, #email {
+  text-align: right;
+}
+
+#logo {
+  text-align: center;
+}
+#logo #D-logo {
+  margin: .3125em;
+  width: 2.5em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  font-size: .8em;
+}
+footer a:link, footer a:visited {
+  color: white;
+}
+footer ul {
+  padding: 0.4em;
+  list-style-type: none;
+}
+footer li {
+  display: inline;
+}
+footer li img {
+  vertical-align: middle;
+}
+footer #footer-img {
+  width: 2em;
+}
+
+#container {
+  width: 100%;
+  background-color: white;
+  margin-top: 3.125em;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #ee3333;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+.head_pic {
+  margin-bottom: 2em;
+}
+
+#history {
+  width: 900px;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+#szoveg {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  font-weight: 300;
+}
+
+#date {
+  margin-top: 0.3em;
+  font-size: 0.75em;
+  font-weight: 600;
+  font-style: italic;
+  color: #e22;
+}
+
+.icon {
+  margin: 2em auto 2.75em auto;
+}
+
+.icon p {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+/*  MAGE images properties  */
+#mage {
+  width: 900px;
+  margin: 0 auto;
+}
+#mage img {
+  width: 900px;
+  height: 350px;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#mage img:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#mage p {
+  font-size: .9em;
+  font-style: italic;
+  margin-bottom: 3em;
+  text-align: left;
+}
+#mage p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 3em;
+}
+
+#next {
+  width: 900px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  text-align: left;
+}
+#next span:last-child {
+  float: right;
+}

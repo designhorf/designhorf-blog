@@ -1,0 +1,149 @@
+$white: #ffffff;
+$pomegranate: #ee3333;
+
+nav{
+	height: 3.125em;
+	width: 1000px;
+	background-color: $pomegranate;
+	text-align: center;
+	font-size: 1em;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+
+	$moz: -webkit-box, 
+			 -moz-box, 
+		  -ms-flexbox, 
+		 -webkit-flex, 
+		 		 flex;
+
+	$flex: -webkit-flex, 
+    		  -moz-flex, 
+    		   -ms-flex, 
+    			   flex;
+
+	li {
+		flex: 2 1 0;
+
+		@for $i from 1 through length($moz) {
+			// NTH(x, y) for list elements
+			display: nth($moz, $i);
+		}
+		
+	    @mixin center($center) {
+					-webkit-flex-pack: $center;
+			   -webkit-flex-line-pack: $center;
+			    -webkit-align-content: $center;
+			  -webkit-justify-content: $center;
+			     -moz-justify-content: $center;
+						-ms-flex-pack: $center;
+				   -ms-flex-line-pack: $center;
+					  justify-content: $center;    
+						align-content: $center;
+		}
+		@include center(center);
+	    
+	    @for $i from 1 through length($flex) {
+			#{nth($flex, $i)+-direction}:column;
+		}
+		height: 3.125em;
+	}
+
+	li:nth-of-type(4) {
+		flex: .7 1 0;
+	}
+
+	ul {
+		list-style-type: none;
+		@for $i from 1 through length($moz) {
+			display: nth($moz, $i);
+		}
+
+		@for $i from 1 through length($flex) {
+			#{nth($flex, $i)+-direction}:row;
+		}
+	    
+	    @for $i from 1 through length($flex) {
+			#{nth($flex,$i)+-wrap}:wrap;
+		}
+	}
+}
+	
+	/*.col-1 { width: 1000px; }
+	.col-2 { width: 500px; }
+	.col-3 { width: 333.3px; }
+	.col-4 { width: 250px; }
+	.col-5 { width: 200px; }
+	.col-6 { width: 166.6px; }
+	.col-7 { width: 142.8px; }
+	.col-8 {}
+	.col-9 {}
+	.col-10 { width: 100px; }
+	.col-11 {}
+	.col-12 { width: 83.3px; }*/
+
+	#main_nav {
+		li#home span:hover, li#aboutME span:hover,
+		li#email span:hover, li#fb span:hover {
+			color: $white;
+			background-color: $pomegranate;
+		}
+		li#logo a{
+			color: #000;
+		}
+	}
+	#sub-page {
+		li#home span:hover, li#aboutME span:hover,
+		li#email span:hover, li#fb span:hover {
+			color: $pomegranate;
+			background-color: $white;
+		}
+		#designhorf, #photography {
+					color: $white;
+				}
+	}
+			#nav-head {
+				text-align: center;
+			}
+				#aboutME, #photography {	
+					text-align: left;
+				}
+				#designhorf, #email {
+					text-align: right;	
+				}
+				#logo {
+					text-align: center;
+					#D-logo {
+						margin: .3125em;
+						width: 2.5em;
+					}
+				}
+				 
+/* FOOTER */
+footer {
+		background-color: #222;
+		color: $white;
+		text-align: center;
+		font-size: .8em;
+	
+		a:link, a:visited {
+			color: $white;
+		}
+
+		ul {
+			padding: 0.4em;
+			list-style-type: none;
+		}
+
+		li {
+			display: inline;
+		}
+
+		li img {
+			vertical-align: middle;
+		}
+
+		#footer-img {
+			width: 2em;
+		}
+}

@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+$default-fonts: 'Open Sans', "Tahoma", "Verdana", "sans-serif";
+$white: #ffffff;
+$pomegranate: #ee3333;
+
+a:link, a:visited {color: $white; text-decoration:none;}
+a:hover, a:active {text-decoration:none;}
+
+body {
+	background-image: url("../img/pattern2.png");
+	font-family: $default-fonts;
+}
+
+	#wrap {
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	/* NAVIGATION */
+	@import "_nav";
+
+
+	#container {
+		width: 100%;
+		background-color: $white;
+		margin-top: 3.125em;
+		text-align: center;
+	}
+
+		h1 {
+			font-weight: 600; 
+			font-size: 2.5em;
+			color: $pomegranate;
+			padding-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		.head_pic {
+			margin-bottom: 2em;
+		}
+
+		#history {
+			width: 900px;
+			margin: 0 auto;
+			color: #444;
+			line-height: 1.5em;
+			text-align: left;
+		}
+
+			#szoveg {
+				font-size: 1.1em;
+				line-height: 1.7em;
+				font-weight: 300;
+			}
+
+			#date {
+				margin-top: 0.3em;
+				font-size: 0.75em;
+				font-weight: 600;
+				font-style: italic;
+				color: #e22;
+			}
+
+		.icon {
+			margin: 2em auto 2.75em auto;
+		}
+			.icon p {
+				font-weight: 300;
+				font-style: italic;
+				font-size: 0.75em;
+			}
+
+		/*  MAGE images properties  */
+		#mage {
+			width: 900px;
+			margin: 0 auto;
+
+				@mixin transition($transition) {
+					-webkit-transition: $transition;
+					   -moz-transition: $transition;
+					     -o-transition: $transition;
+					    -ms-transition: $transition;
+					    	transition: $transition;
+				}
+
+				img {
+					width: 900px;
+					height: 350px;
+					-webkit-filter: grayscale(100%);
+					@include transition(all 1s ease);
+				}
+
+				img:hover {
+					-webkit-filter: grayscale(0%);
+					@include transition(all 1s ease);
+				}
+
+				p {
+					font-size: .9em;
+					font-style: italic;
+					margin-bottom: 3em;
+					text-align: left;
+				}
+
+				p:last-child {
+					margin-bottom: 0;
+					padding-bottom: 3em;
+				}
+		}
+
+		#next {
+			width: 900px;
+			margin: 0 auto;
+			padding-bottom: 3em;
+			text-align: left;
+
+			span:last-child {
+				float: right;
+			}
+		}

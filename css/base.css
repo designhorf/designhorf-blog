@@ -1,0 +1,251 @@
+/* line 1, sub-page.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, sub-page.scss */
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 11, sub-page.scss */
+a:hover, a:active {
+  text-decoration: none;
+}
+
+/* line 13, sub-page.scss */
+body {
+  background-image: url("../img/pattern2.png");
+  font-family: "Open Sans", "Tahoma", "Verdana", "sans-serif";
+}
+
+/* line 18, sub-page.scss */
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+/* line 4, _nav.scss */
+nav {
+  height: 3.125em;
+  width: inherit;
+  background-color: #ee3333;
+  text-align: center;
+  font-size: 1em;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+/* line 16, _nav.scss */
+#main_nav li#home a:hover, #main_nav li#aboutME a:hover,
+#main_nav li#email a:hover, #main_nav li#fb a:hover {
+  color: white;
+  background-color: #ee3333;
+}
+/* line 21, _nav.scss */
+#main_nav li#logo a {
+  color: #000;
+}
+
+/* line 27, _nav.scss */
+#sub-page li#home a:hover, #sub-page li#aboutME a:hover,
+#sub-page li#email a:hover, #sub-page li#fb a:hover {
+  color: #ee3333;
+  background-color: white;
+}
+
+/* line 34, _nav.scss */
+ul#nav-head {
+  padding: 0;
+  text-align: left;
+}
+
+/* line 39, _nav.scss */
+ul#nav-head li {
+  /*padding: 0 ;*/
+}
+
+/* line 43, _nav.scss */
+li#home {
+  margin-left: 50px;
+  margin-right: 259px;
+}
+
+/* line 49, _nav.scss */
+li#logo {
+  margin-left: 30px;
+  margin-right: 150px;
+}
+
+/* line 55, _nav.scss */
+li#aboutME {
+  margin-right: 50px;
+}
+
+/* line 59, _nav.scss */
+li#email {
+  margin-right: 50px;
+}
+
+/*li#fb{}*/
+/* line 65, _nav.scss */
+img#D-logo {
+  margin: 0.3125em;
+  width: 2.5em;
+  vertical-align: middle;
+}
+
+/* line 71, _nav.scss */
+div.line {
+  height: 2px;
+  background: #000;
+  margin: 0 auto;
+}
+
+/* line 27, sub-page.scss */
+#container {
+  width: 100%;
+  background-color: white;
+  margin-top: 3.125em;
+  text-align: center;
+}
+
+/* line 34, sub-page.scss */
+h1 {
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #ee3333;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 42, sub-page.scss */
+.head_pic {
+  margin-bottom: 2em;
+}
+
+/* line 46, sub-page.scss */
+#history {
+  width: 900px;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+/* line 54, sub-page.scss */
+#szoveg {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  font-weight: 300;
+}
+
+/* line 60, sub-page.scss */
+#date {
+  margin-top: 0.3em;
+  font-size: 0.75em;
+  font-weight: 600;
+  font-style: italic;
+  color: #e22;
+}
+
+/* line 68, sub-page.scss */
+.icon {
+  margin: 2em auto 2.75em auto;
+}
+
+/* line 71, sub-page.scss */
+.icon p {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+/*  MAGE images properties  */
+/* line 78, sub-page.scss */
+#mage {
+  width: 900px;
+  margin: 0 auto;
+}
+/* line 90, sub-page.scss */
+#mage img {
+  width: 900px;
+  height: 350px;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/* line 97, sub-page.scss */
+#mage img:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/* line 102, sub-page.scss */
+#mage p {
+  font-size: .9em;
+  font-style: italic;
+  margin-bottom: 3em;
+  text-align: left;
+}
+/* line 109, sub-page.scss */
+#mage p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 3em;
+}
+
+/* line 115, sub-page.scss */
+#next {
+  width: 900px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  text-align: left;
+}
+/* line 121, sub-page.scss */
+#next span:last-child {
+  float: right;
+}
+
+/* line 126, sub-page.scss */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  font-size: .8em;
+}
+
+/* line 133, sub-page.scss */
+footer a:link, footer a:visited {
+  color: white;
+}
+
+/* line 137, sub-page.scss */
+ul {
+  padding: 0.4em;
+  list-style-type: none;
+}
+
+/* line 142, sub-page.scss */
+li {
+  display: inline;
+}
+
+/* line 146, sub-page.scss */
+li img {
+  vertical-align: middle;
+}
+
+/* line 150, sub-page.scss */
+#footer-img {
+  width: 2em;
+}

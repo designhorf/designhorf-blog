@@ -1,0 +1,379 @@
+/* line 1, main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, main.scss */
+a:link {
+  color: #ee3333;
+  text-decoration: none;
+}
+
+/* unvisited link */
+/* line 11, main.scss */
+a:visited {
+  color: #ee3333;
+  text-decoration: none;
+}
+
+/* visited link */
+/* line 12, main.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* mouse over link */
+/* line 13, main.scss */
+a:active {
+  text-decoration: none;
+}
+
+/* selected link */
+/* line 15, main.scss */
+body {
+  background-image: url("../img/compressed/pattern2.png");
+  font-family: "Open Sans", "Tahoma", "Verdana", "sans-serif";
+}
+
+/* line 20, main.scss */
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+/* line 4, _nav.scss */
+nav {
+  height: 3.125em;
+  width: 1000px;
+  background-color: #ee3333;
+  text-align: center;
+  font-size: 1em;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+/* line 25, _nav.scss */
+nav li {
+  flex: 2 1 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-pack: center;
+  -webkit-flex-line-pack: center;
+  -webkit-align-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-flex-pack: center;
+  -ms-flex-line-pack: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 3.125em;
+}
+/* line 52, _nav.scss */
+nav li:nth-of-type(4) {
+  flex: .7 1 0;
+}
+/* line 56, _nav.scss */
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*.col-1 { width: 1000px; }
+.col-2 { width: 500px; }
+.col-3 { width: 333.3px; }
+.col-4 { width: 250px; }
+.col-5 { width: 200px; }
+.col-6 { width: 166.6px; }
+.col-7 { width: 142.8px; }
+.col-8 {}
+.col-9 {}
+.col-10 { width: 100px; }
+.col-11 {}
+.col-12 { width: 83.3px; }*/
+/* line 86, _nav.scss */
+#main_nav li#home span:hover, #main_nav li#aboutME span:hover,
+#main_nav li#email span:hover, #main_nav li#fb span:hover {
+  color: white;
+  background-color: #ee3333;
+}
+/* line 91, _nav.scss */
+#main_nav li#logo a {
+  color: #000;
+}
+
+/* line 96, _nav.scss */
+#sub-page li#home span:hover, #sub-page li#aboutME span:hover,
+#sub-page li#email span:hover, #sub-page li#fb span:hover {
+  color: #ee3333;
+  background-color: white;
+}
+/* line 101, _nav.scss */
+#sub-page #designhorf, #sub-page #photography {
+  color: white;
+}
+
+/* line 105, _nav.scss */
+#nav-head {
+  text-align: center;
+}
+
+/* line 108, _nav.scss */
+#aboutME, #photography {
+  text-align: left;
+}
+
+/* line 111, _nav.scss */
+#designhorf, #email {
+  text-align: right;
+}
+
+/* line 114, _nav.scss */
+#logo {
+  text-align: center;
+}
+/* line 116, _nav.scss */
+#logo #D-logo {
+  margin: .3125em;
+  width: 2.5em;
+}
+
+/* FOOTER */
+/* line 123, _nav.scss */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  font-size: .8em;
+}
+/* line 129, _nav.scss */
+footer a:link, footer a:visited {
+  color: white;
+}
+/* line 133, _nav.scss */
+footer ul {
+  padding: 0.4em;
+  list-style-type: none;
+}
+/* line 138, _nav.scss */
+footer li {
+  display: inline;
+}
+/* line 142, _nav.scss */
+footer li img {
+  vertical-align: middle;
+}
+/* line 146, _nav.scss */
+footer #footer-img {
+  width: 2em;
+}
+
+/* line 27, main.scss */
+nav {
+  background-color: white;
+}
+
+/* line 31, main.scss */
+#container {
+  width: 100%;
+  margin-top: 3.125em;
+}
+
+/* line 58, main.scss */
+div.post {
+  clear: both;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 64, main.scss */
+div.post .space {
+  height: 100px;
+}
+/* line 68, main.scss */
+div.post .image {
+  width: 70%;
+  height: 400px;
+  float: left;
+}
+/* line 72, main.scss */
+div.post .image img {
+  width: 100%;
+}
+/* line 77, main.scss */
+div.post .text {
+  width: 30%;
+  height: 400px;
+  background-color: #ee3333;
+  color: white;
+  float: left;
+  -webkit-transition-property: color, background;
+  -moz-transition-property: color, background;
+  -o-transition-property: color, background;
+  -ms-transition-property: color, background;
+  transition-property: color, background;
+  -webkit-transition-duration: 0.1s, 0.1s;
+  -moz-transition-duration: 0.1s, 0.1s;
+  -o-transition-duration: 0.1s, 0.1s;
+  -ms-transition-duration: 0.1s, 0.1s;
+  transition-duration: 0.1s, 0.1s;
+  -webkit-transition-timing-function: linear, ease-in;
+  -moz-transition-timing-function: linear, ease-in;
+  -o-transition-timing-function: linear, ease-in;
+  -ms-transition-timing-function: linear, ease-in;
+  transition-timing-function: linear, ease-in;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 89, main.scss */
+div.post .text span, div.post .text p {
+  color: #ffffff;
+}
+/* line 93, main.scss */
+div.post .text span {
+  font-size: 2.2em;
+  background-color: white;
+  color: #ee3333;
+  padding: 2px;
+  margin: 0 15px;
+  line-height: 1.8em;
+}
+/* line 103, main.scss */
+div.post .text .category, div.post .text .readm {
+  margin-top: 1em;
+  font-size: 1.2em;
+  text-transform: none;
+}
+/* line 109, main.scss */
+div.post .text .readm {
+  margin-top: 80px;
+  background-color: #222;
+  text-transform: uppercase;
+  -webkit-transition-property: color, background;
+  -moz-transition-property: color, background;
+  -o-transition-property: color, background;
+  -ms-transition-property: color, background;
+  transition-property: color, background;
+  -webkit-transition-duration: 0.1s, 0.1s;
+  -moz-transition-duration: 0.1s, 0.1s;
+  -o-transition-duration: 0.1s, 0.1s;
+  -ms-transition-duration: 0.1s, 0.1s;
+  transition-duration: 0.1s, 0.1s;
+  -webkit-transition-timing-function: linear, ease-in;
+  -moz-transition-timing-function: linear, ease-in;
+  -o-transition-timing-function: linear, ease-in;
+  -ms-transition-timing-function: linear, ease-in;
+  transition-timing-function: linear, ease-in;
+}
+/* line 118, main.scss */
+div.post .text .readm:hover {
+  background: white;
+  color: #e22;
+}
+/* line 124, main.scss */
+div.post .text:hover {
+  background: #99ebd6;
+}
+/* line 128, main.scss */
+div.post .category, div.post .readm {
+  margin-top: 1em;
+  font-size: 1.2em;
+  text-transform: none;
+}
+/* line 134, main.scss */
+div.post .readm {
+  margin-top: 80px;
+  background-color: #222;
+  text-transform: uppercase;
+  -webkit-transition-property: color, background;
+  -moz-transition-property: color, background;
+  -o-transition-property: color, background;
+  -ms-transition-property: color, background;
+  transition-property: color, background;
+  -webkit-transition-duration: 0.1s, 0.1s;
+  -moz-transition-duration: 0.1s, 0.1s;
+  -o-transition-duration: 0.1s, 0.1s;
+  -ms-transition-duration: 0.1s, 0.1s;
+  transition-duration: 0.1s, 0.1s;
+  -webkit-transition-timing-function: linear, ease-in;
+  -moz-transition-timing-function: linear, ease-in;
+  -o-transition-timing-function: linear, ease-in;
+  -ms-transition-timing-function: linear, ease-in;
+  transition-timing-function: linear, ease-in;
+}
+/* line 142, main.scss */
+div.post .readm:hover {
+  background: white;
+  color: #e22;
+}
+
+@media screen and (min-width: 701px) and (max-width: 999px) {
+  /* line 3, _media.scss */
+  #wrap {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  /* line 7, _media.scss */
+  nav {
+    width: 700px;
+  }
+
+  /* line 10, _media.scss */
+  div.post .image, .post .text {
+    width: 100%;
+  }
+
+  /* line 15, _media.scss */
+  div.post .space {
+    height: 18px;
+  }
+  /* line 16, _media.scss */
+  div.post .text {
+    float: right;
+    width: 100%;
+    height: 100px;
+  }
+  /* line 20, _media.scss */
+  div.post .text .category, div.post .text .readm {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 699px) {
+  /* line 27, _media.scss */
+  nav#main_nav, #wrap {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  /* line 33, _media.scss */
+  nav#main_nav, #wrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 39, _media.scss */
+  nav#main_nav, #wrap {
+    width: 100%;
+  }
+}
