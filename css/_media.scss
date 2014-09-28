@@ -99,7 +99,6 @@
 				font-size: 1.7em;
 				margin: 0 15px;
 				padding: 2px;
-//				line-height: 1.8em;
 			}
 			
 			.category, 
@@ -111,7 +110,46 @@
 }
 
 @media screen and (max-width: 479px) {
-	nav#main_nav, #wrap {
+	#main_nav, #wrap {
 		width: 100%;
+	}
+
+	.post .image, .post .text {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.post {
+
+		height: 310px;
+		width: 95%;
+
+		.space { 
+			height: 18px; 
+		}
+
+		.image {
+			height: 250px;
+
+		}
+
+		.text {
+			height: 60px;
+
+			.space {
+				height: 6px;
+			}
+
+			span {
+				font-size: 1.7em;
+				margin: 0 15px;
+				padding: 2px;
+			}
+			
+			.category, 
+			.readm { 
+				visibility: hidden; 
+			}
+		}
 	}
 }
